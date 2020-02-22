@@ -21,6 +21,9 @@
       "react"
     ]
   },
+  "resolutions": {
+    "@babel/runtime": "7.0.0-beta.46"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/learn-co-curriculum/react-async-gif-search-lab.git"
