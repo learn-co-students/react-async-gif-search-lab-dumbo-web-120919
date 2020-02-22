@@ -13,7 +13,8 @@ export default class GifListContainer extends Component {
     }
 
     handleSearchSubmit = (query = "dolphin") => {
-        fetch(`https://api.giphy.com/v1/gifs/search?q=${query}&api_key=MDwKNhg6veduvQqtM0dsxIBtStmAQVMr&rating=g&limit=3`)
+        const API_KEY = process.env.GIPHY_API_KEY
+        fetch(`https://api.giphy.com/v1/gifs/search?q=${query}&api_key=${API_KEY}&rating=g&limit=3`)
           .then(r => r.json())
           .then(({data}) => {
             // console.log({data})
